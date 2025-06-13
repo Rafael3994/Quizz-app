@@ -1,41 +1,21 @@
-import { useState } from 'react';
+import useCardQuizz from './../hooks/useCardQuizz.jsx';
 
 export default function CardQuizz ({questions, setQuestions, currentQuestionIndex, setCurrentQuestionIndex}) {
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [isCorrect, setIsCorrect] = useState(null);
-    const [score, setScore] = useState(0);
-    const [questionsAnswered, setQuestionsAnswered] = useState(0);
-    const currentQuestion = questions && questions[currentQuestionIndex];
-
-    const handleAnswer = (answer) => {
-        if (selectedAnswer !== null) return
-
-        setSelectedAnswer(answer)
-        const currentQuestion = questions[currentQuestionIndex]
-        const correct = answer === currentQuestion.answer
-        setIsCorrect(correct)
-
-        if (correct) {
-            setScore(score + 1)
-        }
-        setQuestionsAnswered(questionsAnswered + 1)
-    }
-
-    const nextQuestion = () => {
-        if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQuestionIndex(currentQuestionIndex + 1)
-            setSelectedAnswer(null)
-            setIsCorrect(null)
-        }
-    }
-    const percentCorrect = questionsAnswered > 0 ? Math.round((score / questions.length) * 100) : 0
-    const resetQuizz = () => {
-        setScore(0)
-        setQuestionsAnswered(0)
-        setCurrentQuestionIndex(0)
-        setSelectedAnswer(null)
-        setIsCorrect(null)
-    }
+    const {
+        isCorrect,
+        percentCorrect,
+        currentQuestion,
+        score,
+        questionsAnswered,
+        selectedAnswer,
+        resetQuizz,
+        nextQuestion,
+        handleAnswer,
+    } = useCardQuizz({
+        questions,
+        setCurrentQuestionIndex,
+        currentQuestionIndex,
+    });
 
     return (
         <div className="card">
