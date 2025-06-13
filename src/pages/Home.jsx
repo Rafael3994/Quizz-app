@@ -5,13 +5,20 @@ export default function Home() {
     const [dragging, setDragging] = useState(false);
     const [questions, setQuestions] = useState(null);
 
+    function radomizeShuffleArray(array) {
+        return array
+          .map(value => ({ value, sort: Math.random() }))
+          .sort((a, b) => a.sort - b.sort)
+          .map(({ value }) => value);
+      }
+
     const handleFile = (file) => {
         if (!file) return
         const reader = new FileReader()
         reader.onload = (e) => {
             try {
                 const json = JSON.parse(e.target?.result)
-                setQuestions(json)
+                setQuestions(radomizeShuffleArray(json))
                 setCurrentQuestionIndex(0)
             } catch (error) {
                 alert("Error al cargar el archivo JSON. Asegúrate de que el formato sea correcto.")
