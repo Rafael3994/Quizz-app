@@ -10,8 +10,8 @@ This project is useful to charge a json to do a practice true/false exam.
 ```
 
 <div style="display: flex; gap: 1rem;">
-  <img src="./public/img-readme/screenshot-init.png" alt="Page onload" style="height: 550px; width: 50%; object-fit: cover;" />
-  <img src="./public/img-readme/screenshot-result.png" alt="Page quizz" style="height: 550px; width: 50%; object-fit: cover;" />
+  <img src="./public/img-readme/screenshot-init.PNG" alt="Page onload" style="height: 550px; width: 50%; object-fit: cover;" />
+  <img src="./public/img-readme/screenshot-result.PNG" alt="Page quizz" style="height: 550px; width: 50%; object-fit: cover;" />
 </div>
 
 ### Build with 🔨
