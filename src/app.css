@@ -31,7 +31,6 @@ body {
   width: 100%;
 }
 
-/* Contenedor principal */
 .main-container {
   display: flex;
   min-height: 100vh;
@@ -47,7 +46,6 @@ body {
   max-width: 500px;
 }
 
-/* Tarjeta */
 .card {
   background-color: var(--card-background);
   border-radius: var(--border-radius);
@@ -95,7 +93,6 @@ body {
     flex: 1;
 }
 
-/* Área de carga de archivos */
 .file-upload-area {
   display: flex;
   flex-direction: column;
@@ -129,7 +126,6 @@ body {
   display: none;
 }
 
-/* Botones */
 .button {
   display: inline-flex;
   align-items: center;
@@ -168,7 +164,6 @@ body {
   background-color: var(--background-color);
 }
 
-/* Ejemplo de JSON */
 .json-format-text {
   color: var(--text-secondary);
   font-size: 0.75rem;
@@ -184,7 +179,6 @@ body {
   width: 100%;
 }
 
-/* Puntuación */
 .score-container {
   display: flex;
   align-items: center;
@@ -212,14 +206,12 @@ body {
   transition: width 0.3s ease;
 }
 
-/* Pregunta */
 .question-text {
   font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
-/* Botones de respuesta */
 .answer-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -238,7 +230,6 @@ body {
   color: white;
 }
 
-/* Alerta */
 .alert {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -281,7 +272,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Cuestionario completado */
 .quiz-completed {
   text-align: center;
 }
