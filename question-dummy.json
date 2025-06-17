@@ -1,0 +1,12 @@
+[
+    {
+        "question": "¿La Tierra es redonda?",
+        "answer": true,
+        "explanation": "Aunque la Tierra no es una esfera perfecta, tiene una forma aproximadamente redonda (geoide), ligeramente achatada en los polos debido a su rotación."
+    },
+    {
+        "question": "¿Existen más de dos sexos biológicos en los seres humanos?",
+        "answer": false,
+        "explanation": "Biológicamente, la mayoría de los seres humanos se clasifican como varones (XY) o hembras (XX). Existen casos raros de intersexualidad, pero no constituyen sexos biológicos adicionales definidos."
+    }
+]
