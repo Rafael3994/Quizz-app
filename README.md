@@ -6,7 +6,7 @@ This project is useful to charge a json to do a practice true/false exam.
 
 ### Deploy 🔥
 ```
-[https://.onrender.com/](https://quizz-app-kvlo.onrender.com)
+https://quizz-app-kvlo.onrender.com
 ```
 
 <div style="display: flex; gap: 1rem;">
